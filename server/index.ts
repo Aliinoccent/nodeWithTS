@@ -1,9 +1,10 @@
 import dotenv from 'dotenv'
-import {server,io,app} from './config/socket.io/socket'
+import {server,app} from './config/socket.io/socket'
 import express from 'express'
 import cors from 'cors'
 import db from './config/db/database';
 import auth from './router/auth';
+
 app.use(express.json());
 app.use(cors({
     origin:'http://localhost:5173/',
